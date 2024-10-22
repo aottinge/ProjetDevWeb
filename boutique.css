@@ -1,0 +1,298 @@
+/*
+ |====================================================================================================================
+ | DOCUMENT
+ |====================================================================================================================
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: "Roboto", sans-serif;
+}
+
+/*
+ |====================================================================================================================
+ | Header
+ |====================================================================================================================
+*/
+
+header {
+    width: 100%;
+    height: 40px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    border-bottom: #6d6d6d 1px solid;
+}
+
+header>nav {
+    width: calc(100% - 40px);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+header>img {
+    height: 100%;
+}
+
+header>nav>* {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1.2em;
+
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header>nav>a:hover {
+    color: #f5f5f5;
+    background-color: #b431c9;
+
+}
+
+/*
+ |====================================================================================================================
+ | contenu de page
+ |====================================================================================================================
+*/
+
+
+.page {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 1500px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+/*
+ |====================================================================================================================
+ | Tuiles
+ |====================================================================================================================
+*/
+
+.tile {
+    width: 302px;
+
+}
+
+.tile>img {
+    width: 300px;
+    border: #000 1px solid;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.tile>.tile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tile-content>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 60%;
+}
+
+.tile-content>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    width: 40%;
+}
+
+
+
+/*
+ |====================================================================================================================
+ | Version mobile
+ |====================================================================================================================
+*/
+@media (max-width: 600px) {
+
+
+/*
+ |====================================================================================================================
+ | Header
+ |====================================================================================================================
+*/
+
+    header>img {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        height: auto;
+        background-color: #2c2c2c;
+    }
+
+    header>nav {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    header>nav>* {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        padding: 5px 0;
+        border-radius: 0;
+    }
+
+/*
+ |====================================================================================================================
+ | contenu de page
+ |====================================================================================================================
+*/
+
+    .page {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-basis: auto;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
+
+        margin: 0;
+
+    }
+
+/*
+ |====================================================================================================================
+ | Tuiles
+ |====================================================================================================================
+*/
+
+    .tile {
+        display: flex;
+        width: 50%;
+        position: relative;
+    }
+
+    .tile>img {
+        width: 100%;
+        border: #000 0px solid;
+    }
+
+
+/*
+ |--------------------------------------------------------------------------------------------------------------------
+ |  infos sur les tuiles
+ |--------------------------------------------------------------------------------------------------------------------
+*/
+    .tile>.tile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        color: white;
+        background-color: rgba(0, 0, 0);
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .tile-content h2 {
+        text-align: center;
+    }
+
+    .tile-content>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5vw;
+        width: 100%;
+        height: 40%;
+    }
+
+    .tile-content span {
+        text-align: center;
+    }
+
+    .tile-content>div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+
+    .material-symbols-outlined {
+        font-size: 4vw;
+    }
+
+/*
+ |--------------------------------------------------------------------------------------------------------------------
+ |  annimation sur le hover des tuiles
+ |--------------------------------------------------------------------------------------------------------------------
+*/
+    .tile>.tile-content {
+        opacity: 0; /* caché par défaut */
+        transition: 0.7s;
+    }
+
+    .tile>.tile-content:hover {
+        opacity: 0.8;  /* visible au survol avec transparence progressive */
+        transition: 1s;
+    }
+
+
+
+
+}
