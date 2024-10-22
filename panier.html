@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+    <header>
+        <nav>
+        <div class="links" >
+            <ul>
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="boutique.html">BOUTIQUE</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="page4.html">page4</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <body>
+        <div class="container">
+            <h1>Votre Panier</h1>
+            
+            <div class="cart-grid">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="" alt="Jeu 1" class="game-image">
+                        <div class="game-info">
+                            <h2>Cyberpunk 2077</h2>
+                            <p>PC - Digital Download</p>
+                        </div>
+                        <div class="game-price">
+                            <p>59.99 €</p>
+                            <div class="quantity-control">
+                                <button onclick="updateQuantity('game1', -1)">-</button>
+                                <span id="quantity-game1">1</span>
+                                <button onclick="updateQuantity('game1', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cart-item">
+                        <img src="" alt="Jeu 2" class="game-image">
+                        <div class="game-info">
+                            <h2>The Legend of Zelda: Breath of the Wild</h2>
+                            <p>Nintendo Switch - Physical</p>
+                        </div>
+                        <div class="game-price">
+                            <p>54.99 €</p>
+                            <div class="quantity-control">
+                                <button onclick="updateQuantity('game2', -1)">-</button>
+                                <span id="quantity-game2">1</span>
+                                <button onclick="updateQuantity('game2', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cart-summary">
+                    <h2>Résumé</h2>
+                    <div class="summary-row">
+                        <span>Sous-total</span>
+                        <span id="subtotal">114.98 €</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Taxes</span>
+                        <span id="taxes">23.00 €</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">137.98 €</span>
+                    </div>
+                    <button id="checkout-button">Procéder au paiement</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="script_panier.js"></script>
+    </body>
+</body>
+</html>
