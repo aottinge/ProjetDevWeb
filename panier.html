@@ -25,56 +25,56 @@
             <h1>Votre Panier</h1>
             
             <div class="grille-panier">
-                <div class="item-panier">
-                    <div class="item-panier">
-                        <img src="" alt="Jeu 1" class="game-image">
+                <div class="articles-panier">
+                    <div class="articles-panier">
+                        <img src="" alt="Jeu 1" class="image-jeu">
                         <div class="info-jeu">
                             <h2>Cyberpunk 2077</h2>
                             <p>PC - Digital Download</p>
                         </div>
                         <div class="prix-jeu">
                             <p>59.99 €</p>
-                            <div class="quantité">
+                            <div class="controle-quantite">
                                 <button onclick="updateQuantity('game1', -1)">-</button>
-                                <span id="quantité-jeu1">1</span>
+                                <span id="quantity-game1">1</span>
                                 <button onclick="updateQuantity('game1', 1)">+</button>
                             </div>
                         </div>
                     </div>
     
-                    <div class="item-panier">
-                        <img src="" alt="Jeu 2" class="game-image">
+                    <div class="articles-panier">
+                        <img src="" alt="Jeu 2" class="image-jeu">
                         <div class="info-jeu">
                             <h2>The Legend of Zelda: Breath of the Wild</h2>
                             <p>Nintendo Switch - Cartouche physique</p>
                         </div>
                         <div class="prix-jeu">
                             <p>54.99 €</p>
-                            <div class="quantité">
+                            <div class="controle-quantite">
                                 <button onclick="updateQuantity('game2', -1)">-</button>
-                                <span id="quantité-jeu2">1</span>
+                                <span id="quantity-game2">1</span>
                                 <button onclick="updateQuantity('game2', 1)">+</button>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <div class="résumé-panier">
+                <div class="resume-panier">
                     <h2>Résumé</h2>
-                    <div class="summary-row">
+                    <div class="ligne-resume">
                         <span>Sous-total</span>
                         <span id="subtotal">114.98 €</span>
                     </div>
-                    <div class="summary-row">
+                    <div class="ligne-resume">
                         <span>Taxes</span>
                         <span id="taxes">23.00 €</span>
                     </div>
-                    <div class="summary-divider"></div>
-                    <div class="summary-row total">
+                    <div class="resume-post-taxes"></div>
+                    <div class="ligne-resume total">
                         <span>Total</span>
                         <span id="total">137.98 €</span>
                     </div>
-                    <button id="checkout-button">Procéder au paiement</button>
+                    <button id="bouton-paiement">Procéder au paiement</button>
                 </div>
             </div>
         </div>
