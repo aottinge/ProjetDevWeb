@@ -1,60 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique</title>
-
     <link rel="stylesheet" href="boutique.css">
     <link rel="stylesheet" href="main.css">
-
 </head>
 <body>
     <header>
-        <img src="Image/Not_Instant_logo.jpg" alt="Logo">
+        <nav>
+            <div class="links">
+                <ul>
+                    <img src="Image/Not_Instant_logo.jpg" alt="logo" class="logo">
+                    <li><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="boutique.html">BOUTIQUE</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="page4.html">Page4</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div class="page">
-        <div class="content">
+    <div class="container">
+        <h1>Notre Boutique de Jeux</h1>
+
+        <div class="grid-boutique">
             <div class="tile">
-                <img src="image1.jpg" alt="Product Image">
-                <div class="tile-content">
-                    <div>
-                        <h2>Cyberpunk</h2>
-                        <p>Produit Description</p>
-                    </div>
-                    <div>
-                        <span class="price">59.99 €</span>
-                    </div>
+                <img src="Image/cyberpunk.jpg" alt="Cyberpunk 2077" class="image-jeu">
+                <div class="info-jeu">
+                    <h2>Cyberpunk 2077</h2>
+                    <p>PC - Digital Download</p>
+                    <p class="prix-jeu">59.99 €</p>
+                    <button class="btn-ajout-panier">Ajout au panier</button>
                 </div>
             </div>
+
             <div class="tile">
-                <img src="image2.jpg" alt="Product Image">
-                <div class="tile-content">
-                    <div>
-                        <h2>Zelda BOTW</h2>
-                        <p>Produit Description</p>
-                    </div>
-                    <div>
-                        <span class="price">54.99 €</span>
-                    </div>
+                <img src="Image/zelda.jpg" alt="The Legend of Zelda: Breath of the Wild" class="image-jeu">
+                <div class="info-jeu">
+                    <h2>The Legend of Zelda: Breath of the Wild</h2>
+                    <p>Nintendo Switch - Cartouche physique</p>
+                    <p class="prix-jeu">54.99 €</p>
+                    <button class="btn-ajout-panier">Ajout au panier</button>
                 </div>
             </div>
-            <!-- Ajoutez plus de tuiles ici -->
+
+            <!-- Add more tiles as needed -->
         </div>
     </div>
 
-</body>
-</html>
-
-
-
-
-
-
-
-
-    </div>
-
+    <script src="script_boutique.js"></script>
 </body>
 </html>
