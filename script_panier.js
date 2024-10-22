@@ -1,3 +1,5 @@
+/* fait a l'aide de ChatGPT */
+
 function updateQuantity(gameId, change) {
     const quantityElement = document.getElementById(`quantity-${gameId}`);
     let quantity = parseInt(quantityElement.textContent);

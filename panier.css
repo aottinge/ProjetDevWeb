@@ -19,19 +19,19 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.cart-grid {
+.grille-panier {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
 
-.cart-items {
+.item-panier {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.cart-item {
+.item-panier {
     background-color: #1e293b;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -40,46 +40,46 @@ h1 {
     justify-content: space-between;
 }
 
-.game-image {
+.image-jeu {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 0.25rem;
 }
 
-.game-info {
+.info-jeu {
     flex-grow: 1;
     margin-left: 1rem;
 }
 
-.game-info h2 {
+.info-jeu h2 {
     font-size: 1.25rem;
     margin: 0 0 0.5rem 0;
 }
 
-.game-info p {
+.info-jeu p {
     color: #94a3b8;
     margin: 0;
 }
 
-.game-price {
+.prix-jeu {
     text-align: right;
 }
 
-.game-price p {
+.prix-jeu p {
     font-size: 1.25rem;
     font-weight: bold;
     color: #22d3ee;
     margin: 0 0 0.5rem 0;
 }
 
-.quantity-control {
+.quantité {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.quantity-control button {
+.quantité button {
     background-color: #334155;
     color: white;
     border: none;
@@ -88,17 +88,17 @@ h1 {
     font-size: 1rem;
 }
 
-.quantity-control span {
+.quantité span {
     margin: 0 0.5rem;
 }
 
-.cart-summary {
+.résumé-panier {
     background-color: #1e293b;
     border-radius: 0.5rem;
     padding: 1.5rem;
 }
 
-.cart-summary h2 {
+.résumé-panier h2 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
