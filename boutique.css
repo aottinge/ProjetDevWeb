@@ -7,6 +7,17 @@ body {
     padding: 0;
 }
 
+header {
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    max-width: 100px; 
+    margin-left: 10px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -72,7 +83,7 @@ h1 {
 
 
 .btn-ajout-panier {
-    background-color: #4CAF50; /* Vert */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -87,5 +98,5 @@ h1 {
 }
 
 .btn-ajout-panier:hover {
-    background-color: #45a049; /* Vert plus foncé */
+    background-color: #45a049;
 }
