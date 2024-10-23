@@ -1,6 +1,7 @@
 .logo {
-    height: 40px;
-    margin-right: 1rem;
+    height: 50px;
+    margin-left: -7%;
+    float: left;
 }
 
 body {
@@ -46,8 +47,8 @@ h1 {
 }
 
 .image-jeu {
-    width: 80px;
-    height: 80px;
+    width: 750px;
+    height: 200px;
     object-fit: cover;
     border-radius: 0.25rem;
 }
