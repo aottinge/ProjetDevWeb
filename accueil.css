@@ -1,7 +1,7 @@
 
 .text-box{
     width: 99%;
-    color: #000000;
+    color: #22d3ee;
     position: absolute;
     top: 50%;
     left:50%;
@@ -9,6 +9,7 @@
     text-align: center;
 
 }
+
 .text-box h1{
     font-size: 62px;
 }
@@ -22,7 +23,7 @@
 .btn{
     display: inline-block;
     text-decoration:none;
-    color: #000000;
+    color: #22d3ee;
     border:1px solid black;
     padding: 12px 34px;
     font-size:13px;
@@ -34,5 +35,7 @@
 
 .btn:hover{
     border:1px;
-    background: beige;
+    background: #0f172a;
 }
+
+

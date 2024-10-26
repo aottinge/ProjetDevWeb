@@ -1,3 +1,9 @@
+.logo {
+    height: 50px;
+    margin-left: -7%;
+    float: left;
+}
+
 header{
     background-color: #0f172a;
 }
@@ -32,7 +38,7 @@ nav{
     content: ''; 
     width: 0%;
     height: 2px;
-    background:#ffffff ;
+    background:#22d3ee ;
     display: block;
     margin: auto;
     transition: 0.5s ;
