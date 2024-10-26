@@ -46,4 +46,6 @@
     background: #0f172a;
 }
 
-
+nav .fa{
+    display: none; 
+}
