@@ -70,6 +70,7 @@ h1{
     color:#0f172a;
 }
 
+/* best seller */
 .row{
     margin-top: 5%;
     display: flex;
@@ -144,4 +145,16 @@ h2{
     .row{
         flex-direction: column;
     }
+}
+
+
+
+/* AVIS */
+
+.avis{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
 }
