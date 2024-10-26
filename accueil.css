@@ -30,7 +30,7 @@
 }
 
 .btn{
-    display: inline-block;
+    display: inline;
     text-decoration:none;
     color: #22d3ee;
     border:1px solid black;
@@ -40,11 +40,17 @@
     position: relative;
     cursor: pointer;
     transition: 1s;
+    align-items: center;
 }
 
 .btn:hover{
     border:1px;
     background: #0f172a;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; 
 }
 
 nav .fa{
