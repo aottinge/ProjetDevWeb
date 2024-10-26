@@ -189,3 +189,12 @@ h2{
         margin-right: 15px;
     }
 }
+
+.footer{
+width: 100%;
+color: white;
+text-align: center;
+padding: 30px 0;
+background-color: #0f172a;
+
+}
