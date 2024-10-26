@@ -53,5 +53,9 @@ nav .fa{
     .text-box h1{
         font-size: 20px;
     }
+    
+    header ul li{
+        display: block; 
+   }
 
  }
