@@ -57,12 +57,15 @@ nav .fa{
     header ul li{
         display: block; 
    }
-   nav .fa {     
+
+nav .fa {     
     display: block;
     color: #22d3ee;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
 }
+
+
 
  }
