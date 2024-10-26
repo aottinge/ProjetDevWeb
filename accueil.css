@@ -50,21 +50,12 @@ nav .fa{
     display: none; 
 }
 @media(max-width: 700px){
+    
     .text-box h1{
         font-size: 20px;
     }
 
-    header ul li{
-        display: block; 
-   }
 
-nav .fa {     
-    display: block;
-    color: #22d3ee;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-}
 
 
 
